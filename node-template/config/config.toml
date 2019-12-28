@@ -5,7 +5,7 @@ chain_id = "b6a4d7da21443f5e816e8700eea87610e6d769657d6b8ec73028457bf2ca4036"  #
 privkey = "45c56be699dca666191ad3446897e0f480da234da896270202514a0e1a587c3f"
 
 # db config
-data_path = "./devtools/chain/data"
+data_path = "data/"
 
 [graphql]
 listening_address = "0.0.0.0:8000"

@@ -11,3 +11,8 @@ muta = { git = "https://github.com/yejiayu/muta", branch = "muta-crate"}
 
 runtime = "0.3.0-alpha.7"
 runtime-tokio = "0.3.0-alpha.6"
+
+[workspace]
+members = [
+  "services/metadata",
+]
