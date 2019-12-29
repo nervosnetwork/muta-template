@@ -7,17 +7,19 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-muta = { git = "https://github.com/yejiayu/muta", branch = "muta-crate"}
-protocol = { git = "https://github.com/yejiayu/muta", branch = "muta-crate"}
+muta = { git = "https://github.com/yejiayu/muta", branch = "muta-crate" }
+protocol = { git = "https://github.com/yejiayu/muta", branch = "muta-crate" }
 
 derive_more = "0.15"
 runtime = "0.3.0-alpha.7"
 runtime-tokio = "0.3.0-alpha.6"
 
+asset = { git = "https://github.com/yejiayu/muta", branch = "muta-crate" }
 metadata = { path = "services/metadata" }
-asset = { git = "https://github.com/yejiayu/muta", branch = "muta-crate"}
+service-template = { path = "services/service-template" }
 
 [workspace]
 members = [
   "services/metadata",
+  "services/service-template",
 ]

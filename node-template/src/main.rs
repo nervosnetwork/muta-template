@@ -13,8 +13,9 @@ impl ServiceMapping for DefaultServiceMapping {
         sdk: SDK,
     ) -> ProtocolResult<Box<dyn Service>> {
         let service = match name {
-            "metadata" => Box::new(metadata::MetadataService::init(sdk)?) as Box<dyn Service>,
             "asset" => Box::new(asset::AssetService::init(sdk)?) as Box<dyn Service>,
+            "metadata" => Box::new(metadata::MetadataService::init(sdk)?) as Box<dyn Service>,
+            "store" => Box::new(service_template::HelloService::init(sdk)?) as Box<dyn Service>,
             _ => {
                 return Err(MappingError::NotFoundService {
                     service: name.to_owned(),
@@ -27,7 +28,11 @@ impl ServiceMapping for DefaultServiceMapping {
     }
 
     fn list_service_name(&self) -> Vec<String> {
-        vec!["metadata".to_owned()]
+        vec![
+            "asset".to_owned(),
+            "metadata".to_owned(),
+            "store".to_owned(),
+        ]
     }
 }
 
@@ -57,6 +62,6 @@ impl std::error::Error for MappingError {}
 
 impl From<MappingError> for ProtocolError {
     fn from(err: MappingError) -> ProtocolError {
-        ProtocolError::new(ProtocolErrorKind::Service, Box::new(err))
+        ProtocolError::new(ProtocolErrorKind::Binding, Box::new(err))
     }
 }

@@ -4,7 +4,7 @@ use derive_more::{Display, From};
 
 use binding_macro::{cycles, read, service, write};
 use protocol::fixed_codec::FixedCodec;
-use protocol::traits::{ReturnEmpty, Service, ServiceSDK, StoreMap, RETURN_EMPTY};
+use protocol::traits::{Service, ServiceSDK, StoreMap};
 use protocol::types::{Hash, Metadata, ServiceContext, METADATA_KEY};
 use protocol::{ProtocolError, ProtocolErrorKind, ProtocolResult};
 
