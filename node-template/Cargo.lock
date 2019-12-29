@@ -60,7 +60,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "asset"
 version = "0.1.0"
-source = "git+https://github.com/yejiayu/muta?branch=muta-crate#519d135d89d6bfe720bb4306982ca689ce4cd9c9"
+source = "git+https://github.com/yejiayu/muta?branch=muta-crate#2123b1c0178cce30ec8a785fd1259053e37c1881"
 dependencies = [
  "binding-macro 0.1.0 (git+https://github.com/yejiayu/muta?branch=muta-crate)",
  "byteorder 1.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -211,7 +211,7 @@ dependencies = [
 [[package]]
 name = "binding-macro"
 version = "0.1.0"
-source = "git+https://github.com/yejiayu/muta?branch=muta-crate#519d135d89d6bfe720bb4306982ca689ce4cd9c9"
+source = "git+https://github.com/yejiayu/muta?branch=muta-crate#2123b1c0178cce30ec8a785fd1259053e37c1881"
 dependencies = [
  "derive_more 0.15.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "proc-macro2 1.0.6 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -416,7 +416,7 @@ dependencies = [
 [[package]]
 name = "common-config-parser"
 version = "0.1.0"
-source = "git+https://github.com/yejiayu/muta?branch=muta-crate#519d135d89d6bfe720bb4306982ca689ce4cd9c9"
+source = "git+https://github.com/yejiayu/muta?branch=muta-crate#2123b1c0178cce30ec8a785fd1259053e37c1881"
 dependencies = [
  "reqwest 0.9.24 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 1.0.104 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -428,7 +428,7 @@ dependencies = [
 [[package]]
 name = "common-crypto"
 version = "0.1.0"
-source = "git+https://github.com/yejiayu/muta?branch=muta-crate#519d135d89d6bfe720bb4306982ca689ce4cd9c9"
+source = "git+https://github.com/yejiayu/muta?branch=muta-crate#2123b1c0178cce30ec8a785fd1259053e37c1881"
 dependencies = [
  "ophelia 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "ophelia-bls-amcl 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -438,7 +438,7 @@ dependencies = [
 [[package]]
 name = "common-logger"
 version = "0.1.0"
-source = "git+https://github.com/yejiayu/muta?branch=muta-crate#519d135d89d6bfe720bb4306982ca689ce4cd9c9"
+source = "git+https://github.com/yejiayu/muta?branch=muta-crate#2123b1c0178cce30ec8a785fd1259053e37c1881"
 dependencies = [
  "json 0.12.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "log 0.4.8 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -448,7 +448,7 @@ dependencies = [
 [[package]]
 name = "common-merkle"
 version = "0.1.0"
-source = "git+https://github.com/yejiayu/muta?branch=muta-crate#519d135d89d6bfe720bb4306982ca689ce4cd9c9"
+source = "git+https://github.com/yejiayu/muta?branch=muta-crate#2123b1c0178cce30ec8a785fd1259053e37c1881"
 dependencies = [
  "protocol 0.1.0 (git+https://github.com/yejiayu/muta?branch=muta-crate)",
  "rayon 1.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -484,7 +484,7 @@ dependencies = [
 [[package]]
 name = "core-api"
 version = "0.1.0"
-source = "git+https://github.com/yejiayu/muta?branch=muta-crate#519d135d89d6bfe720bb4306982ca689ce4cd9c9"
+source = "git+https://github.com/yejiayu/muta?branch=muta-crate#2123b1c0178cce30ec8a785fd1259053e37c1881"
 dependencies = [
  "async-trait 0.1.22 (registry+https://github.com/rust-lang/crates.io-index)",
  "bytes 0.5.3 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -504,7 +504,7 @@ dependencies = [
 [[package]]
 name = "core-consensus"
 version = "0.1.0"
-source = "git+https://github.com/yejiayu/muta?branch=muta-crate#519d135d89d6bfe720bb4306982ca689ce4cd9c9"
+source = "git+https://github.com/yejiayu/muta?branch=muta-crate#2123b1c0178cce30ec8a785fd1259053e37c1881"
 dependencies = [
  "async-trait 0.1.22 (registry+https://github.com/rust-lang/crates.io-index)",
  "bincode 1.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -547,7 +547,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "core-mempool"
 version = "0.1.0"
-source = "git+https://github.com/yejiayu/muta?branch=muta-crate#519d135d89d6bfe720bb4306982ca689ce4cd9c9"
+source = "git+https://github.com/yejiayu/muta?branch=muta-crate#2123b1c0178cce30ec8a785fd1259053e37c1881"
 dependencies = [
  "async-trait 0.1.22 (registry+https://github.com/rust-lang/crates.io-index)",
  "bytes 0.5.3 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -573,7 +573,7 @@ dependencies = [
 [[package]]
 name = "core-network"
 version = "0.1.0"
-source = "git+https://github.com/yejiayu/muta?branch=muta-crate#519d135d89d6bfe720bb4306982ca689ce4cd9c9"
+source = "git+https://github.com/yejiayu/muta?branch=muta-crate#2123b1c0178cce30ec8a785fd1259053e37c1881"
 dependencies = [
  "async-trait 0.1.22 (registry+https://github.com/rust-lang/crates.io-index)",
  "bincode 1.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -601,7 +601,7 @@ dependencies = [
 [[package]]
 name = "core-storage"
 version = "0.1.0"
-source = "git+https://github.com/yejiayu/muta?branch=muta-crate#519d135d89d6bfe720bb4306982ca689ce4cd9c9"
+source = "git+https://github.com/yejiayu/muta?branch=muta-crate#2123b1c0178cce30ec8a785fd1259053e37c1881"
 dependencies = [
  "async-trait 0.1.22 (registry+https://github.com/rust-lang/crates.io-index)",
  "derive_more 0.15.0 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -946,7 +946,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "framework"
 version = "0.1.0"
-source = "git+https://github.com/yejiayu/muta?branch=muta-crate#519d135d89d6bfe720bb4306982ca689ce4cd9c9"
+source = "git+https://github.com/yejiayu/muta?branch=muta-crate#2123b1c0178cce30ec8a785fd1259053e37c1881"
 dependencies = [
  "asset 0.1.0 (git+https://github.com/yejiayu/muta?branch=muta-crate)",
  "byteorder 1.3.2 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -1729,7 +1729,7 @@ dependencies = [
 [[package]]
 name = "muta"
 version = "0.1.0"
-source = "git+https://github.com/yejiayu/muta?branch=muta-crate#519d135d89d6bfe720bb4306982ca689ce4cd9c9"
+source = "git+https://github.com/yejiayu/muta?branch=muta-crate#2123b1c0178cce30ec8a785fd1259053e37c1881"
 dependencies = [
  "binding-macro 0.1.0 (git+https://github.com/yejiayu/muta?branch=muta-crate)",
  "bytes 0.5.3 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -1761,7 +1761,11 @@ dependencies = [
 name = "muta-chain"
 version = "0.1.0"
 dependencies = [
+ "asset 0.1.0 (git+https://github.com/yejiayu/muta?branch=muta-crate)",
+ "derive_more 0.15.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "metadata 0.1.0",
  "muta 0.1.0 (git+https://github.com/yejiayu/muta?branch=muta-crate)",
+ "protocol 0.1.0 (git+https://github.com/yejiayu/muta?branch=muta-crate)",
  "runtime 0.3.0-alpha.8 (registry+https://github.com/rust-lang/crates.io-index)",
  "runtime-tokio 0.3.0-alpha.6 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -2170,7 +2174,7 @@ dependencies = [
 [[package]]
 name = "protocol"
 version = "0.1.0"
-source = "git+https://github.com/yejiayu/muta?branch=muta-crate#519d135d89d6bfe720bb4306982ca689ce4cd9c9"
+source = "git+https://github.com/yejiayu/muta?branch=muta-crate#2123b1c0178cce30ec8a785fd1259053e37c1881"
 dependencies = [
  "async-trait 0.1.22 (registry+https://github.com/rust-lang/crates.io-index)",
  "bincode 1.2.1 (registry+https://github.com/rust-lang/crates.io-index)",

@@ -8,9 +8,14 @@ edition = "2018"
 
 [dependencies]
 muta = { git = "https://github.com/yejiayu/muta", branch = "muta-crate"}
+protocol = { git = "https://github.com/yejiayu/muta", branch = "muta-crate"}
 
+derive_more = "0.15"
 runtime = "0.3.0-alpha.7"
 runtime-tokio = "0.3.0-alpha.6"
+
+metadata = { path = "services/metadata" }
+asset = { git = "https://github.com/yejiayu/muta", branch = "muta-crate"}
 
 [workspace]
 members = [
