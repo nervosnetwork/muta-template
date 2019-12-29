@@ -15,7 +15,6 @@ impl ServiceMapping for DefaultServiceMapping {
         let service = match name {
             "asset" => Box::new(asset::AssetService::init(sdk)?) as Box<dyn Service>,
             "metadata" => Box::new(metadata::MetadataService::init(sdk)?) as Box<dyn Service>,
-            "store" => Box::new(service_template::HelloService::init(sdk)?) as Box<dyn Service>,
             _ => {
                 return Err(MappingError::NotFoundService {
                     service: name.to_owned(),
@@ -28,11 +27,7 @@ impl ServiceMapping for DefaultServiceMapping {
     }
 
     fn list_service_name(&self) -> Vec<String> {
-        vec![
-            "asset".to_owned(),
-            "metadata".to_owned(),
-            "store".to_owned(),
-        ]
+        vec!["asset".to_owned(), "metadata".to_owned()]
     }
 }
 

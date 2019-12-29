@@ -16,10 +16,8 @@ runtime-tokio = "0.3.0-alpha.6"
 
 asset = { git = "https://github.com/yejiayu/muta", branch = "muta-crate" }
 metadata = { path = "services/metadata" }
-service-template = { path = "services/service-template" }
 
 [workspace]
 members = [
   "services/metadata",
-  "services/service-template",
 ]
