@@ -5,7 +5,7 @@ use derive_more::{Display, From};
 use binding_macro::{cycles, read, service, write};
 use protocol::fixed_codec::FixedCodec;
 use protocol::traits::{
-    Service, ServiceSDK, StoreArray, StoreBool, StoreMap, StoreString, StoreUint64,
+    Service as ServiceTrait, ServiceSDK, StoreArray, StoreBool, StoreMap, StoreString, StoreUint64,
 };
 use protocol::types::{Bytes, Hash, Metadata, ServiceContext, METADATA_KEY};
 use protocol::{ProtocolError, ProtocolErrorKind, ProtocolResult};
