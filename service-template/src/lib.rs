@@ -19,7 +19,7 @@ pub struct Service<SDK: ServiceSDK> {
 
 #[service]
 impl<SDK: 'static + ServiceSDK> Service<SDK> {
-    pub fn init(mut sdk: SDK) -> ProtocolResult<Self> {
+    pub fn new(mut sdk: SDK) -> ProtocolResult<Self> {
         let messages: Box<dyn StoreMap<Hash, String>> = sdk.alloc_or_recover_map("messages")?;
         Ok(Self { sdk, messages })
     }
