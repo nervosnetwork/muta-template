@@ -13,8 +13,8 @@ impl ServiceMapping for DefaultServiceMapping {
         sdk: SDK,
     ) -> ProtocolResult<Box<dyn Service>> {
         let service = match name {
-            "asset" => Box::new(asset::AssetService::init(sdk)?) as Box<dyn Service>,
-            "metadata" => Box::new(metadata::MetadataService::init(sdk)?) as Box<dyn Service>,
+            "asset" => Box::new(asset::AssetService::new(sdk)?) as Box<dyn Service>,
+            "metadata" => Box::new(metadata::MetadataService::new(sdk)?) as Box<dyn Service>,
             _ => {
                 return Err(MappingError::NotFoundService {
                     service: name.to_owned(),

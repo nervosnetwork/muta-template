@@ -1,14 +1,7 @@
-mod types;
-
-use derive_more::{Display, From};
-
-use binding_macro::{cycles, read, service, write};
-use protocol::fixed_codec::FixedCodec;
-use protocol::traits::{Service, ServiceSDK, StoreMap};
-use protocol::types::{Hash, Metadata, ServiceContext, METADATA_KEY};
-use protocol::{ProtocolError, ProtocolErrorKind, ProtocolResult};
-
-use crate::types::EmptyPayload;
+use binding_macro::{cycles, service};
+use protocol::traits::ServiceSDK;
+use protocol::types::{Metadata, ServiceContext, METADATA_KEY};
+use protocol::ProtocolResult;
 
 pub struct MetadataService<SDK: ServiceSDK> {
     sdk: SDK,
@@ -16,13 +9,13 @@ pub struct MetadataService<SDK: ServiceSDK> {
 
 #[service]
 impl<SDK: 'static + ServiceSDK> MetadataService<SDK> {
-    pub fn init(sdk: SDK) -> ProtocolResult<Self> {
+    pub fn new(sdk: SDK) -> ProtocolResult<Self> {
         Ok(Self { sdk })
     }
 
     #[cycles(210_00)]
     #[read]
-    fn get_metadata(&self, ctx: ServiceContext, _: EmptyPayload) -> ProtocolResult<Metadata> {
+    fn get_metadata(&self, ctx: ServiceContext) -> ProtocolResult<Metadata> {
         let metadata: Metadata = self
             .sdk
             .get_value(&METADATA_KEY.to_owned())?

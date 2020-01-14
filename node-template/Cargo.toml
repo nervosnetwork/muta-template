@@ -8,7 +8,7 @@ edition = "2018"
 
 [dependencies]
 muta = { git = "https://github.com/nervosnetwork/muta", branch = "master" }
-protocol = { git = "https://github.com/nervosnetwork/muta", branch = "master" }
+protocol = { git = "https://github.com/nervosnetwork/muta", branch = "master", package = "muta-protocol" }
 
 derive_more = "0.15"
 runtime = "0.3.0-alpha.7"
