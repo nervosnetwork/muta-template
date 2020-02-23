@@ -2,10 +2,11 @@ mod types;
 
 use derive_more::{Display, From};
 
-use binding_macro::{cycles, read, service, write};
+use binding_macro::{cycles, genesis, hook_after, hook_before, read, service, write};
 use protocol::fixed_codec::FixedCodec;
 use protocol::traits::{
-    Service as ServiceTrait, ServiceSDK, StoreArray, StoreBool, StoreMap, StoreString, StoreUint64,
+    ExecutorParams, Service as ServiceTrait, ServiceSDK, StoreArray, StoreBool, StoreMap,
+    StoreString, StoreUint64,
 };
 use protocol::types::{Bytes, Hash, Metadata, ServiceContext, METADATA_KEY};
 use protocol::{ProtocolError, ProtocolErrorKind, ProtocolResult};
